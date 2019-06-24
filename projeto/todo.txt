@@ -1,0 +1,21 @@
+﻿10022001 1130 (v) comer manteiga com pao @pao +projeto
+10022001 1020 (v) comprar manteiga @padaria +comer
+10102019 2200 (a) ir ao club de strip @protejito +preservativo
+10102019 1500 (A) ir a farmacia comprar remedio @projeto +preservativo
+18022001 0040 (X) reunião com pedrao + projeto @empresa
+(g) comer pao
+22012000 0830 (Z) ir ao mercado comprar frutas
+22012000 0820 (Z) pegar dinheiro para ir ao mercado
+10022001 comprar medicamentos
+10032001 terminar os medicamentos
+10012001 1001 mas oq eh isso
+10012001 1000 da que eu te dou outra
+11022019 1900 comer pizza com os parceiros de noite @pizzaria +parceria
+(c) tomar muito suco todos os dias
+01072019 0600 (C) iniciar projeto monstro @academia +monstrao
+10102010 1010 (D) reuniao sobre o xbox @microsoft +planejamento
+17062019 2100 (a) renovar o livro de md @biblioteca +ufpe
+(e) preparar o pao
+12022001 1500 (B) reuniao acerca do novo streming @reuniao +IF697
+20092019 1400 (A) ir a reuniao o rioMar @prioridadeMaxima +Negocios
+18072019 1830 (a) reuniao do processo @contexto +projeto

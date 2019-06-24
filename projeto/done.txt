@@ -1,0 +1,8 @@
+10022001 1130 (v) comer manteiga com pao @pao +projeto10022001 comprar medicamentos
+18022001 0040 (X) reunião com pedrao + projeto @empresa
+10032001 terminar os medicamentos
+1130 comer muitos salgados
+10012001 1001 mas oq eh isso
+(g) comer pao
+18062019 1700 (D) prova de calculo @calculo +if968
+28022014 0302 (d) comer batatas fritas @kek +projetocomer fritas com queijo
