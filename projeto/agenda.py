@@ -318,26 +318,6 @@ def adjListar():
         linhaPrint[i]+=[linhaArq[y][1]]
   return linhaPrint,linhaBase
   
-'''def formatacao(linha):
-  linha=linha.split()
-  linha = organizar(linha)
-  linha =linha[0]
-  if linha[1][0]!='' and linha[1][1]!='':
-    data=linha[1][0][0]+linha[1][0][1]+'/'+linha[1][0][2]+linha[1][0][3]+'/'+linha[1][0][4]+linha[1][0][5]+linha[1][0][6]+linha[1][0][7]
-    hora=linha[1][1][0]+linha[1][1][1]+'h'+linha[1][1][2]+linha[1][1][3]+'m'
-    linha =(linha[0],(data,hora,linha[1][2],linha[1][3],linha[1][4]))
-    frase =linha[1][0]+' '+linha[1][1] +' '+ linha[1][2]+' '+linha[0]+' '+linha[1][3]+' '+linha[1][4]
-  elif linha[1][0]!='' and linha[1][1]=='':
-    data=linha[1][0][0]+linha[1][0][1]+'/'+linha[1][0][2]+linha[1][0][3]+'/'+linha[1][0][4]+linha[1][0][5]+linha[1][0][6]+linha[1][0][7]
-    linha =(linha[0],(data,linha[1][1],linha[1][2],linha[1][3],linha[1][4]))
-    frase=linha[1][0]+' '+ linha[1][2]+' '+linha[0]+' '+linha[1][3]+' '+linha[1][4]
-  elif linha[1][1]!='' and linha[1][0]=='':
-    hora =linha[1][1][0]+linha[1][1][1]+'h'+linha[1][1][2]+linha[1][1][3]+'m'
-    linha =(linha[0],(linha[1][0],hora,linha[1][2],linha[1][3],linha[1][4]))
-    frase=linha[1][1] +' '+ linha[1][2]+' '+linha[0]+' '+linha[1][3]+' '+linha[1][4]
-  return frase
-  
-    return linha '''
                    
 def ordenarPorDataHora(itens):
   itens = ordData(ordenarHora(itens))
@@ -372,50 +352,7 @@ def ordData(itens):
         comData[y+1] =comData[y]
         comData[y]=temp
   return comData+semData
-                  
 
-'''def ordenarData(itens):
-  semPrioridade=[itens[x] for x in range(len(itens))if itens[x][1][2]=='']
-  prioridade=[itens[x] for x in range(len(itens)) if itens[x][1][2]!='']
-  #Para os que possuem prioridade
-  semDataPri=[prioridade[x] for x in range(len(prioridade)) if prioridade[x][1][0]=='']
-  dataPri=[prioridade[x] for x in range(len(prioridade)) if prioridade[x][1][0]!='']
-  if len(dataPri)>1:
-    i=0
-    while i<len(dataPri):
-      i+=1
-      y=0
-      while y<len(dataPri)-1:
-        if inverter(dataPri[y][1][0])>inverter(dataPri[y+1][1][0]) and dataPri[y][1][2].upper()>=dataPri[y+1][1][2].upper():
-          temp =dataPri[y+1]
-          dataPri[y+1]=dataPri[y]
-          dataPri[y] = temp
-          y+=1
-        else:
-          y+=1
-  prioridade = dataPri+semDataPri
-  #Para os sem prioridade
-  comData=[semPrioridade[x] for x in range(len(semPrioridade)) if semPrioridade[x][1][0]!='']
-  semData=[semPrioridade[x] for x in range(len(semPrioridade)) if semPrioridade[x][1][0]=='']
-  if len(comData)>1:
-    i=0
-    while i<len(comData):
-      i+=1
-      y=0
-      while y<len(comData)-1: 
-        if inverter(comData[y][1][0])>inverter(comData[y+1][1][0]):
-          temp =comData[y+1]
-          comData[y+1]=comData[y]
-          comData[y] = temp
-          y+=1
-        else:
-          y+=1
-  semPrioridade = comData+semData
-  itens=prioridade +semPrioridade
-
-
-  return itens
-'''
 #função usada para inverter a data na hora de comparar o'tamanho/Valor' da data, assim simplificando o processo de comparação
 def inverter(data):
     data=list(data)
@@ -443,9 +380,6 @@ def ordenarPorPrioridade(itens):
 
   return prioridade + semPrioridade
     
-
-
-  ################ COMPLETAR
 def fazer(num):
   lista = adjListar()[0]
   indiceFeito=''
@@ -514,8 +448,6 @@ def priorizar(num, prioridade):
 
   return
 
-
-
 # Esta função processa os comandos e informações passados através da linha de comando e identifica
 # que função do programa deve ser invocada. Por exemplo, se o comando 'adicionar' foi usado,
 # isso significa que a função adicionar() deve ser invocada para registrar a nova atividade.
@@ -536,7 +468,6 @@ def processarComandos(comandos) :
     comandos.pop(0) 
     comandos.pop(0)
     return listar()
-  
   
   
     ################ COMPLETAR
